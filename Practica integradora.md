@@ -1,41 +1,69 @@
-# Resolución de la practica integradora
+<h1> Resolución de la practica integradora
 
-## Pasos Preliminares
+<h2> 0. Pasos Preliminares
 
-### Limpieza del disco duro
+<h3> Limpieza del disco duro
 
-Borrar todo:
-    docker system prune -a
+<br>
 
-Limpiar Carpetas
-    Visualizar:
-        ls
-    Eliminar:
-        rm -r <Nombre de carpeta>      -- (Eliminar una por una)
+    
++ Borrar todo: 
 
-Limpiar Contenedores
-    Visualizar:
-        sudo docker ps
-    Eliminar:
-        sudo docker rm -f $(sudo docker ps -a -q)
+  `docker system prune -a`
+    
+<h3> Limpiar Carpetas
+<br>
 
-Limpiar Volumen
-    Visualizar:
-        sudo docker volume ls
-    Eliminar:
-        sudo docker volume prune
+    
++ Visualizar:
+    
+    `ls`
 
-Limpiar Imágenes
-    Visualizar:
-        sudo docker image ls
-    Eliminar:
-        sudo docker image prune
++ Eliminar (una por una):
+    
+    `rm -r <Nombre de carpeta>` 
+    
+<h3> Limpiar Contenedores
+<br>
+
++ Visualizar:
+    
+    `sudo docker ps`
+
++ Eliminar:
+    
+    `sudo docker rm -f $(sudo docker ps -a -q)`
+
+<h3> Limpiar Volumen
+<br>
+    
++ Visualizar:
+    
+    `sudo docker volume ls`
+
++ Eliminar todos los contenedores:
+    
+    `sudo docker volume prune`
+
+<h3> Limpiar Imágenes
+<br>
+
++ Visualizar:
+
+    `sudo docker image ls`
+
++ Eliminar:
+
+    `sudo docker image prune`
 
 Verificar si está limpio maquina virtual (MV)
-    Visualizar:
-        df -h
+<br>
 
-### Para implementar ejecute
++ Visualizar:
+
+    `df -h`
+
+### Finalmente, Clonamos y levantamos los contenedores
 Clonamos el repositorio, nos posicionamos en la carpeta y levantamos el compose
 ```
 Clonar repositorio
