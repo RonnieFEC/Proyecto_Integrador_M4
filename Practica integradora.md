@@ -15,51 +15,51 @@
 <br>
 
     
-+ Visualizar:
++ Visualizar las carpetas:
     
     `ls`
 
-+ Eliminar (una por una):
++ Eliminar carpetas (una por una):
     
     `rm -r <Nombre de carpeta>` 
     
 <h3> Limpiar Contenedores
 <br>
 
-+ Visualizar:
++ Visualizar contenedores:
     
     `sudo docker ps`
 
-+ Eliminar:
++ Eliminar TODOS los contenedores:
     
     `sudo docker rm -f $(sudo docker ps -a -q)`
 
 <h3> Limpiar Volumen
 <br>
     
-+ Visualizar:
++ Visualizar volumen:
     
     `sudo docker volume ls`
 
-+ Eliminar todos los contenedores:
++ Eliminar TODO los volumenes:
     
     `sudo docker volume prune`
 
 <h3> Limpiar Imágenes
 <br>
 
-+ Visualizar:
++ Visualizar Imágenes:
 
     `sudo docker image ls`
 
-+ Eliminar:
++ Eliminar TODAS las imagenes:
 
     `sudo docker image prune`
 
 Verificar si está limpio maquina virtual (MV)
 <br>
 
-+ Visualizar:
++ Visualizar espacio disponible:
 
     `df -h`
 
